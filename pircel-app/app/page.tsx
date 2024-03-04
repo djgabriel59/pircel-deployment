@@ -7,7 +7,7 @@ export default function Home() {
   const [data, setData] = useState<any[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   useEffect(() => {
-    fetch("http://localhost:5000/houses")
+    fetch("https://pircel-server.vercel.app/houses")
       .then((res) => res.json())
       .then((data) => {
         setData(data);
